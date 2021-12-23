@@ -287,7 +287,7 @@ The main tasks for this exercise are as follows:
 
 1. Within the Remote Desktop session to **az30308a-hv-vm**, start Microsoft Edge, navigate to the [Azure portal](https://portal.azure.com), and sign in by providing credentials of a user account with the Owner role in the subscription you will be using in this lab.
 
-1. In the Azure portal, search for and select **Azure Migrate**, on the **Azure Migrate** blade, in the **Migration goals** section, select **Windows, Linux and SQL Server** and then select **Create Project**.
+1. In the Azure portal, search for and select **Azure Migrate**, on the **Azure Migrate** blade, in the **Migration goals** section, select **Servers, databases and web apps** and then select **Create Project**.
 
 1. On the **Azure Migrate** blade, specify the following settings (leave others with their default values) and select **Create**:
 
@@ -380,7 +380,7 @@ The main tasks for this exercise are as follows:
 
 1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Microsoft Edge window, in the Azure portal, search for and select **Azure Migrate**.
 
-1. On the **Azure Migrate | Windows, Linux and SQL Server** blade, select **Discover** in the **Azure Migrate: Discovery and Assessment** tile. 
+1. On the **Azure Migrate | Servers, databases and web apps** blade, select **Discover** in the **Azure Migrate: Server Assessment** tile. 
 
 1. On the **Discover** blade, in the **Are your servers virtualized?** drop-down list, select **Yes, with Hyper-V**. 
 
@@ -470,7 +470,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 2: Configure, run, and view an assessment
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Microsoft Edge window displaying the Azure portal, navigate back to the **Azure Migrate | Windows, Linux and SQL Server** blade, select **Refresh**, and, in the **Azure Migrate: Discovery and assessment** tile, open the dropdown **Assess** and select **Azure VM**.
+1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Microsoft Edge window displaying the Azure portal, navigate back to the **Azure Migrate | Servers, databases and web apps** blade, select **Refresh**, and, in the **Azure Migrate: Discovery and assessment** tile, open the dropdown **Assess** and select **Azure VM**.
 
    >**Note**: You might need to refresh the page again. 
 
@@ -499,7 +499,7 @@ The main tasks for this exercise are as follows:
 
 1. Click **Next**, and then click **Create assessment**. 
 
-1. Navigate back to the **Azure Migrate | Windows, Linux and SQL Server** blade, select **Refresh**, in the **Azure Migrate: Server Assessment** tile, verify that there the **Assessments** line contains **1** entry, and select it.
+1. Navigate back to the **Azure Migrate | Servers, databases and web apps** blade, select **Refresh**, in the **Azure Migrate: Server Assessment** tile, verify that there the **Assessments** line contains **1** entry, and select it.
 
 1. On the **Azure Migrate: Server Assessment | Assessments** blade, select the newly created assessment **az30308a-assessment**. 
 
@@ -523,9 +523,9 @@ The main tasks for this exercise are as follows:
 
 #### Task 1: Prepare for migration of Hyper-V VMs
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Microsoft Edge window displaying the Azure portal, navigate back to the **Azure Migrate | Windows, Linux and SQL Server** blade. 
+1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Microsoft Edge window displaying the Azure portal, navigate back to the **Azure Migrate | Servers, databases and web apps** blade. 
 
-1. On the **Azure Migrate | Windows, Linux and SQL Server** blade, in the **Azure Migrate: Server Migration** tile, select the **Discover** link. 
+1. On the **Azure Migrate | Servers, databases and web apps** blade, in the **Azure Migrate: Server Migration** tile, select the **Discover** link. 
 
 1. On the **Discover machines** blade, specify the following settings (leave others with their default values) and select **Create resources**:
 
@@ -566,9 +566,9 @@ The main tasks for this exercise are as follows:
 
 #### Task 2: Configure replication of Hyper-V VMs
 
-1. Once you receive the confirmation that the registration was finalized, navigate back to the **Azure Migrate | Windows, Linux and SQL Server** blade, in the **Azure Migrate: Server Migration** tile, select the **Replicate** link. 
+1. Once you receive the confirmation that the registration was finalized, navigate back to the **Azure Migrate | Servers, databases and web apps** blade, in the **Azure Migrate: Server Migration** tile, select the **Replicate** link. 
 
-   >**Note**: You might have to refresh the browser page displaying the **Azure Migrate | Windows, Linux and SQL Server** blade.
+   >**Note**: You might have to refresh the browser page displaying the **Azure Migrate | Servers, databases and web apps** blade.
 
 1. On the **Source settings** page of the **Replicate** blade, in the **Are your machines virtualized?** drop-down list, select **Yes, with Hyper-V** and select **Next: Virtual machines**.  
 
@@ -597,7 +597,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **Review + Start replication** page of the **Replicate** blade, select **Replicate**.  
 
-1. To monitor the status of replication, navigate back to the **Azure Migrate | Windows, Linux and SQL Server** blade, in the **Azure Migrate: Server Migration** tile, select the **Replicating servers** entry and, on the **Azure Migrate: Server Migration | Replicating machines**, examine the **Status** column in the list of the replicating machines.
+1. To monitor the status of replication, navigate back to the **Azure Migrate | Servers, databases and web apps** blade, in the **Azure Migrate: Server Migration** tile, select the **Replicating servers** entry and, on the **Azure Migrate: Server Migration | Replicating machines**, examine the **Status** column in the list of the replicating machines.
 
 1. Wait until the status changes to **Protected**. This might take additional 15 minutes.
 
@@ -628,9 +628,9 @@ The main tasks for this exercise are as follows:
 
 1. On the **Migrate** blade, in the **Shutdown machines before migration to minimize data loss?** drop-down list, select **Yes**, next select the checkbox next to the **az30308a-vm1** entry, and then select **Migrate**.
 
-1. To monitor the status of migration, navigate back to the **Azure Migrate | Windows, Linux and SQL Server** blade, in the **Azure Migrate: Server Migration** tile, select the **Replicating servers** entry and, on the **Azure Migrate: Server Migration | Replicating machines**, examine the **Status** column in the list of the replicating machines. Verify that the status displayed the **Planned failover finished** status.
+1. To monitor the status of migration, navigate back to the **Azure Migrate | Servers, databases and web apps** blade, in the **Azure Migrate: Server Migration** tile, select the **Replicating servers** entry and, on the **Azure Migrate: Server Migration | Replicating machines**, examine the **Status** column in the list of the replicating machines. Verify that the status displayed the **Planned failover finished** status.
 
-   >**Note**: Migration is supposed to be a non-reversible action. If you want to see the completed information, navigate back to the Azure Migrate | Windows, Linux and SQL Server blade, refresh the page and verify that Migrated Servers in the Azure Migrate: Server Migration tile has a value of 1.
+   >**Note**: Migration is supposed to be a non-reversible action. If you want to see the completed information, navigate back to the Azure Migrate | Servers, databases and web apps blade, refresh the page and verify that Migrated Servers in the Azure Migrate: Server Migration tile has a value of 1.
 
 
 #### Task 4: Remove Azure resources deployed in the lab
