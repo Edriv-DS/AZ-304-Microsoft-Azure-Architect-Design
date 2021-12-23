@@ -53,7 +53,6 @@
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',parameters('vnetName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnet0Name'))]",
     "subnet0NetworkSecurityGroupName": "az30306a-web-nsg",
-    "pipName": "az30306a-pip",
     "nicName": "az30306a-nic",
     "windowsImage": {
       "publisher": "MicrosoftWindowsServer",
@@ -66,20 +65,6 @@
     "storageAPIVersion": "2019-06-01"
   },
   "resources": [
-    {
-      "type": "Microsoft.Network/publicIPAddresses",
-      "name": "[variables('pipName')]",
-      "apiVersion": "[variables('networkAPIVersion')]",
-      "location": "[resourceGroup().location]",
-      "sku": {
-       "name": "Basic"
-      },
-      "properties": {
-        "publicIPAddressVersion": "IPv4",
-        "publicIPAllocationMethod": "Dynamic",
-        "idleTimeoutInMinutes": 4
-      }
-    },
     {
       "name": "[variables('subnet0NetworkSecurityGroupName')]",
       "type": "Microsoft.Network/networkSecurityGroups",
@@ -150,8 +135,7 @@
       "apiVersion": "[variables('networkAPIVersion')]",
       "location": "[resourceGroup().location]",
       "dependsOn": [
-        "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]",
-        "[variables('pipName')]"
+        "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"
       ],
       "properties": {
         "ipConfigurations": [
@@ -161,9 +145,6 @@
               "privateIPAllocationMethod": "Dynamic",
               "subnet": {
                 "id": "[variables('subnetRef')]"
-              },
-              "publicIpAddress": {
-                 "id": "[resourceId('Microsoft.Network/publicIpAddresses', variables('pipName'))]"
               }
             }
           }

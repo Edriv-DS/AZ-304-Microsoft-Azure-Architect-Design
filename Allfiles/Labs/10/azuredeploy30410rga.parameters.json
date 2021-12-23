@@ -32,15 +32,6 @@
     "virtualNetworkAddressRange": {
       "value": "10.10.0.0/16"
     },
-    "loadBalancerFrontEndIPName": {
-      "value": "az30410a-lbfe"
-    },
-    "backendAddressPoolName": {
-      "value": "az30410a-lbbe"
-    },
-    "inboundNatRulesName": {
-      "value": "az30410a-rdprule"
-    },
     "networkInterfaceName": {
       "value": "az30410a-nic"
     },
@@ -52,9 +43,6 @@
     },
     "subnetRange": {
       "value": "10.10.0.0/24"
-    },
-    "publicIPAddressName": {
-      "value": "az30410a-pip"
     },
     "availabilitySetName": {
       "value": "az30410a-avset"
