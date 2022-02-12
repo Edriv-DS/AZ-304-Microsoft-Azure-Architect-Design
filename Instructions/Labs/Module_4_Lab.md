@@ -206,7 +206,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **New user** blade, select **Create**
 
-1. On the lab computer, open an **InPrivate** browser window and sign in to the [Azure portal](https://portal.azure.com) using the newly created **az30410-aaduser1** user account. When prompted to update the password, change the password to **&lt;YOUR PASSWORD&gt;**. 
+1. On the lab computer, open an **InPrivate** browser window and sign in to the [Azure portal](https://portal.azure.com) using the newly created **az30410-aaduser1** user account. When prompted to update the password, change the password to a password of your choice (**&lt;YOUR PASSWORD&gt;**). 
 
 1. Sign out as the **az30410-aaduser1** user from the Azure portal and close the InPrivate browser window.
 

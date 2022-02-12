@@ -164,7 +164,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **az30308a-hv-vm** blade, select **Connect**, in the drop-down menu, select **Bastion**, on the **Bastion** tab of the **az30308a-hv-vm \| Connect** blade, select **Use Bastion**.
 
-1. When prompted, provde the following credentials and select **Connect** (replace the **&lt;YOUR PASSWORD&gt;** placeholder with the password of your choice)::
+1. When prompted, provde the following credentials and select **Connect** (replace the **&lt;YOUR PASSWORD&gt;** placeholder with the password of your choice):
 
    |Setting|Value|
    |---|---|
@@ -221,7 +221,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Virtual Machine Connection window to **az30308a-vm1**, on the **License terms** page, select **Accept**. 
 
-1. In the Virtual Machine Connection window to **az30308a-vm1**, on the **Customize settings** page, set the password of the built-in Administrator account to **&lt;YOUR PASSWORD&gt;** and select **Finish**. 
+1. In the Virtual Machine Connection window to **az30308a-vm1**, on the **Customize settings** page, set the password of the built-in Administrator account to a password of your choice (**&lt;YOUR PASSWORD&gt;**) and select **Finish**. 
 
 1. In the Virtual Machine Connection window to **az30308a-vm1**, sign in by using the newly set password.
 
@@ -453,7 +453,7 @@ The main tasks for this exercise are as follows:
 
 1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, verify that registration was successful and select **Continue**. 
 
-1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, in the **Manage credentials and discovery sources** section, select **Add credentials**, in the **Add credentials** pane, specify the following settings, select **Save**:
+1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, in the **Manage credentials and discovery sources** section, select **Add credentials**, in the **Add credentials** pane, specify the following settings, select **Save** (replace the **&lt;YOUR PASSWORD&gt;** placeholder with a password of your choice):
 
     | Setting | Value | 
     | --- | --- |
