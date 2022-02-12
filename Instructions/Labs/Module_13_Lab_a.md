@@ -42,7 +42,7 @@ Windows Server admin credentials
 
 -  User Name: **Student**
 
--  Password: **Pa55w.rd1234**
+-  Password: **&lt;YOUR PASSWORD&gt;**
 
 Estimated Time: 60 minutes
 
@@ -127,10 +127,10 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, start a **PowerShell** session within the **Cloud Shell**. 
 
-1. From the Cloud Shell pane, run the following to create a new Azure AD application that you will associate with the service principal you create in the subsequent steps of this task:
+1. From the Cloud Shell pane, run the following to create a new Azure AD application that you will associate with the service principal you create in the subsequent steps of this task (replace the **&lt;YOUR PASSWORD&gt;** placeholder with the password of your choice):
 
    ```powershell
-   $password = 'Pa55w.rd1234.@z304'
+   $password = '<YOUR_PASSWORD>'
    $securePassword = ConvertTo-SecureString -Force -AsPlainText -String $password
    $az30304aadapp = New-AzADApplication -DisplayName 'az30304aadsp' -HomePage 'http://az30304aadsp' -IdentifierUris 'http://az30304aadsp' -Password $securePassword
    ```
@@ -209,13 +209,13 @@ The main tasks for this exercise are as follows:
 
 1. Use the **Search connectors and triggers** text box, to search for **Event Grid**, in the list of results, in the **Triggers** column, select **When a resource event occurs** Azure Event Grid trigger to add it to the designer workspace.
 
-1. In the **Azure Event Grid** tile, select the **Connect with Service Principal** link, specify the following settings, and select **Create**:
+1. In the **Azure Event Grid** tile, select the **Connect with Service Principal** link, specify the following settings, and select **Create** (replace the **&lt;YOUR PASSWORD&gt;** placeholder with a password of your choice):
 
     | Setting | Value | 
     | --- | --- |
     | Connection Name | **az30304egconnection** |
     | Client ID | the value of the **ApplicationId** property you identified earlier in this exercise |
-    | Client Secret | **Pa55w.rd1234.@z304** |
+    | Client Secret | **&lt;YOUR PASSWORD&gt;** |
     | Tenant | the value of the **TenantId** property you identified earlier in this exercise |
 
 1. In the **When a resource event occurs** tile, specify the following settings:

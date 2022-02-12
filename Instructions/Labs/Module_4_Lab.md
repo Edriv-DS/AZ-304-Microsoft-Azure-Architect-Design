@@ -41,7 +41,7 @@ Windows Server admin credentials
 
 -  User Name: **Student**
 
--  Password: **Pa55w.rd1234**
+-  Password: **&lt;YOUR PASSWORD&gt;**
 
 Estimated Time: 120 minutes
 
@@ -206,7 +206,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **New user** blade, select **Create**
 
-1. On the lab computer, open an **InPrivate** browser window and sign in to the [Azure portal](https://portal.azure.com) using the newly created **az30410-aaduser1** user account. When prompted to update the password, change the password to **Pa55w.rd1234**. 
+1. On the lab computer, open an **InPrivate** browser window and sign in to the [Azure portal](https://portal.azure.com) using the newly created **az30410-aaduser1** user account. When prompted to update the password, change the password to **&lt;YOUR PASSWORD&gt;**. 
 
 1. Sign out as the **az30410-aaduser1** user from the Azure portal and close the InPrivate browser window.
 
@@ -276,12 +276,12 @@ The main tasks for this exercise are as follows:
 
 1. On the **az30410a-vm1** blade, select **Connect**, in the drop-down menu, select **Bastion**, on the **Bastion** tab of the **az30410a-vm1 \| Connect** blade, select **Use Bastion**.
 
-1. When prompted, provde the following credentials and select **Connect**:
+1. When prompted, provide the following credentials and select **Connect** (replace the **&lt;YOUR PASSWORD&gt;** placeholder with the password of your choice):
 
    |Setting|Value|
    |---|---|
    |User Name|**Student**|
-   |Password|**Pa55w.rd1234**|
+   |Password|**&lt;YOUR PASSWORD&gt;**|
 
 1. Within the Remote Desktop session to **az30410a-vm1**, in the Server Manager window, select **Local Server**, select the **On** link next to the **IE Enhanced Security Configuration** label, and, in the **IE Enhanced Security Configuration** dialog box, select both **Off** options.
 
@@ -295,14 +295,14 @@ The main tasks for this exercise are as follows:
 
 1. In the **Tasks** pane, within the **ToSync** section, select **New**, and, in the cascading menu, select **User**.
 
-1. In the **Create User** window, create a new user account with the following settings (leave others with their existing values) and select **OK**:
+1. In the **Create User** window, create a new user account with the following settings (replace the **&lt;YOUR PASSWORD&gt;** placeholder with a password of your choice and leave other settings with their existing values) and select **OK**:
 
     | Setting | Value | 
     | --- | --- |
     | Full Name | **aduser1** |
     | User UPN logon | **aduser1** |
     | User SamAccountName logon | **aduser1** |
-    | Password | **Pa55w.rd1234** | 
+    | Password | **&lt;YOUR PASSWORD&gt;** | 
     | Other password options | **Password never expires** |
 
 
@@ -316,7 +316,7 @@ The main tasks for this exercise are as follows:
 
 1. In Select platform dropdown select Windows 64-bit. Then click Download.
 
-1. Within the Remote Desktop session to **az30410a-vm1**, in Microsoft Edge, navigate to the [Azure portal](https://portal.azure.com), and sign in by using the **az30410-aaduser1** user account you created the previous exercise. When prompted, specify the full user name you recorded and the **Pa55w.rd1234** password.
+1. Within the Remote Desktop session to **az30410a-vm1**, in Microsoft Edge, navigate to the [Azure portal](https://portal.azure.com), and sign in by using the **az30410-aaduser1** user account you created the previous exercise. When prompted, specify the full user name you recorded and the password of your choice (**&lt;YOUR PASSWORD&gt;**).
 
 1. In the Azure portal, search for and select **Azure Active Directory** and, on the **Adatum Lab | Overview** blade, select **Azure AD Connect**.
 
@@ -338,12 +338,12 @@ The main tasks for this exercise are as follows:
 
 1. On the **Connect your directories** page, select the **Add Directory** button to the right of the **adatum.com** forest entry.
 
-1. In the **AD forest account** window, ensure that the option to **Create new AD account** is selected, specify the following credentials, and select **OK**:
+1. In the **AD forest account** window, ensure that the option to **Create new AD account** is selected, specify the following credentials, and select **OK** (replace the **&lt;YOUR PASSWORD&gt;** placeholder with the password of your choice):
 
     | Setting | Value | 
     | --- | --- |
     | User Name | **ADATUM\Student** |
-    | Password | **Pa55w.rd1234** |
+    | Password | **&lt;YOUR PASSWORD&gt;** |
 
 1. Back on the **Connect your directories** page, ensure that the **adatum.com** entry appears as a configured directory and select **Next**
 
@@ -458,7 +458,7 @@ The main tasks for this exercise are as follows:
 
 1. Within the Remote Desktop session to **az30410a-vm1**, in the **Microsoft Edge** window, select **Settings** menu header, in the **Settings** menu, select **Safety**, in the cascading menu, select **InPrivate Browsing**, and, in the InPrivate Microsoft Edge window, navigate to the Access Panel Applications portal [https://myapplications.microsoft.com](https://myapplications.microsoft.com).
 
-1. When prompted, sign in by using the synchronized Azure AD account of the **aduser1**, using the full user name you recorded in the previous exercise and the **Pa55w.rd1234** password. 
+1. When prompted, sign in by using the synchronized Azure AD account of the **aduser1**, using the full user name you recorded in the previous exercise and the password of your choice (**&lt;YOUR PASSWORD&gt;**). 
 
 1. Verify that you can successfully sign in to the Access Panel Applications portal. 
 

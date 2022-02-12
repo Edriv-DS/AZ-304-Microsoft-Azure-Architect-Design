@@ -41,7 +41,7 @@ Windows Server admin credentials
 
 -  User Name: **Student**
 
--  Password: **Pa55w.rd1234**
+-  Password: **&lt;YOUR PASSWORD&gt;**
 
 Estimated Time: 120 minutes
 
@@ -99,7 +99,7 @@ The main tasks for this exercise are as follows:
     https://github.com/az140mp/azure-quickstart-templates/tree/master/demos/nested-vms-in-virtual-network
     ```
 
-1. On the **Hyper-V Host Virtual Machine with nested VMs** blade in the Azure portal, specify the following settings (leave others with their default values):
+1. On the **Hyper-V Host Virtual Machine with nested VMs** blade in the Azure portal, specify the following settings (replace the **&lt;YOUR PASSWORD&gt;** placeholder with a password of your choice and leave other settings with their default values):
 
     | Setting | Value | 
     | --- | --- |
@@ -110,7 +110,7 @@ The main tasks for this exercise are as follows:
     | Host Network Interface2Name | **az30308a-hv-vm-nic2** |
     | Host Virtual Machine Name | **az30308a-hv-vm** |
     | Host Admin Username | **Student** |
-    | Host Admin Password | **Pa55w.rd1234** |
+    | Host Admin Password | **&lt;YOUR PASSWORD&gt;** |
 
 1. On the **Hyper-V Host Virtual Machine with nested VMs** blade, select **Review + create** and then select **Create**.
 
@@ -164,12 +164,12 @@ The main tasks for this exercise are as follows:
 
 1. On the **az30308a-hv-vm** blade, select **Connect**, in the drop-down menu, select **Bastion**, on the **Bastion** tab of the **az30308a-hv-vm \| Connect** blade, select **Use Bastion**.
 
-1. When prompted, provde the following credentials and select **Connect**:
+1. When prompted, provde the following credentials and select **Connect** (replace the **&lt;YOUR PASSWORD&gt;** placeholder with the password of your choice)::
 
    |Setting|Value|
    |---|---|
    |User Name|**Student**|
-   |Password|**Pa55w.rd1234**|
+   |Password|**&lt;YOUR PASSWORD&gt;**|
 
 1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Server Manager window, click **Local Server**, click the **On** link next to the **IE Enhanced Security Configuration** label, and, in the **IE Enhanced Security Configuration** dialog box, select both **Off** options and then click **OK**.
 
@@ -221,7 +221,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Virtual Machine Connection window to **az30308a-vm1**, on the **License terms** page, select **Accept**. 
 
-1. In the Virtual Machine Connection window to **az30308a-vm1**, on the **Customize settings** page, set the password of the built-in Administrator account to **Pa55w.rd1234** and select **Finish**. 
+1. In the Virtual Machine Connection window to **az30308a-vm1**, on the **Customize settings** page, set the password of the built-in Administrator account to **&lt;YOUR PASSWORD&gt;** and select **Finish**. 
 
 1. In the Virtual Machine Connection window to **az30308a-vm1**, sign in by using the newly set password.
 
@@ -424,7 +424,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Virtual Machine Connection window to the virtual appliance, on the **License terms** page, select **Accept**. 
 
-1. In the Virtual Machine Connection window to the virtual appliance, on the **Customize settings** page, set the password of the built-in Administrator account to **Pa55w.rd1234** and select **Finish**. 
+1. In the Virtual Machine Connection window to the virtual appliance, on the **Customize settings** page, set the password of the built-in Administrator account to **&lt;YOUR PASSWORD&gt;** and select **Finish**. 
 
 1. In the Virtual Machine Connection window to the virtual appliance, sign in by using the newly set password.
 
@@ -440,12 +440,12 @@ The main tasks for this exercise are as follows:
 
    >**Note**: Ignore the warning about the website's security certificate. 
 
-1. When prompted, sign in with the following credentials:
+1. When prompted, sign in with the following credentials (replace the **&lt;YOUR PASSWORD&gt;** placeholder with the password of your choice):
 
     | Setting | Value | 
     | --- | --- |
     | User Name | **Administrator** |
-    | Password | **Pa55w.rd1234** |
+    | Password | **&lt;YOUR PASSWORD&gt;** |
 
 1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, select the **I agree** button, wait for the prerequisites to be successfully verified. 
 
@@ -459,7 +459,7 @@ The main tasks for this exercise are as follows:
     | --- | --- |
     | Friendly Name | **az30308acreds** |    
     | User Name | **Student** |
-    | Password | **Pa55w.rd1234** |
+    | Password | **&lt;YOUR PASSWORD&gt;** |
 
 1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, in the **Provide Hyper-V host/cluster details** section, select **Add discovery source**, in the **Add discovery source** pane, select the **Add single item** option, ensure that the **Discovery source** drop-down list is set to **Hyper-V Host/Cluster**, in the **Friendly name** drop-down list, select the **az30308acreds** entry, in the **IP address /FQDN** text box, type **10.0.2.1**, and select **Save**. 
 

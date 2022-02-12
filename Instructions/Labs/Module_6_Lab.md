@@ -37,7 +37,7 @@ Windows Server admin credentials
 
 -  User Name: **Student**
 
--  Password: **Pa55w.rd1234**
+-  Password: **&lt;YOUR PASSWORD&gt;**
 
 Estimated Time: 60 minutes
 
@@ -70,13 +70,13 @@ The main tasks for this exercise are as follows:
     | Resource group | the name of a new resource group **az30303a-labRG** |
     | Database name | **az30303a-db1** | 
 
-1. Directly below the **Server** drop down list, select the **Create new** and, on the **New server** blade, specify the following settings and select **OK** (leave others with their default values):
+1. Directly below the **Server** drop down list, select the **Create new** and, on the **New server** blade, specify the following settings and select **OK** (replace the **&lt;YOUR PASSWORD&gt;** placeholder with a password of your choice and leave other settings with their default values):
 
     | Setting | Value | 
     | --- | --- |
     | Server name | any valid, globally unique name | 
     | Server admin login | **sqladmin** |
-    | Password | **Pa55w.rd1234** |
+    | Password | **&lt;YOUR PASSWORD&gt;** |
     | Location | the name of an Azure region where you can provision SQL databases |
 
 1. Next to the **Compute + storage** label, select the **Configure database** link.
@@ -120,7 +120,7 @@ The main tasks for this exercise are as follows:
 
 1. On the SQL database blade, select **Query editor (preview)**.
 
-1. In the **SQL Server authentication** section, in the **Password** textbox, type **Pa55w.rd1234** and select **OK**.
+1. In the **SQL Server authentication** section, in the **Password** textbox, type the password of your choice (**&lt;YOUR PASSWORD&gt;**) and select **OK**.
 
 1. In the **Query editor (preview)** pane, on the **Query 1** tab, enter the following query and select **Run**:
 
@@ -249,7 +249,7 @@ The main tasks for this exercise are as follows:
 
 1. Switch back to the editor window and replace the placeholder `<your_ado_net_connection_string>` with the value of the connection string you copied in the previous step.
 
-1. In the connection string you copied into the editor window, replace the placeholder `{your_password}` with **Pa55w.rd1234**.
+1. In the connection string you copied into the editor window, replace the placeholder `{your_password}` with the password of your choice (**&lt;YOUR PASSWORD&gt;**).
 
 1. Save and close the **Program.cs** file.
 
