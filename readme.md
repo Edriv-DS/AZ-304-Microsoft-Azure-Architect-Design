@@ -5,6 +5,10 @@
 - **Are you a MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
 - **Need to manually build the lab instructions?** - Instructions are available in the [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) repository
 
+## Course Retirement 
+
+This exam will retire on March 31, 2022. A new exam, Exam AZ-305, is available. This repository will be archived on that date. 
+
 ## Security Issue - February 2022
 
 Some Azure training labs instruct the student to use a specific user name and password. Bad actors constantly scan virtual machines and try to log in using those credentials.
