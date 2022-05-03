@@ -1,4 +1,4 @@
-# AZ-304: Microsoft Azure Architect Design
+# (Closed) AZ-304: Microsoft Azure Architect Design
 
 ## Exam Retirement 
 
